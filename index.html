@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>The box-model widget</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/ci_favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            
+            <div class="col-12 mt-5">
+                <h4>Adjust the values below to see how they affect the buttons and their code</h4>
+                <div id="box-model-box" class="grey-box">
+                    <button>Button</button>
+                    <button>Button</button>
+                    <button id="third-button">Button</button>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4 mb-5">
+                <div id="code-box" class="grey-box">
+                    <pre>button {
+    <span id="font-code" class="code-line">font-size: <span class="content-val">20px</span>;</span>
+    <span id="padding-code" class="code-line">padding: <span class="padding-val">10px</span>;</span>
+    <span id="border-code" class="code-line">border-width: <span class="border-val">1px</span>;</span>
+    <span id="margin-code" class="code-line">margin: <span class="margin-val">5px</span>;</span>
+}</pre>
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-8 mb-5">
+                <div id="box-model-controls">
+
+                    <table>
+                        <tr>
+                            <td class="value-col">
+                                Content
+                            </td>
+                            <td class="content-val cell">
+                                20px
+                            </td>
+                            <td class="input-cel">
+                                <input type="range" id="content" name="content" min="15" max="30" value="23" step="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Padding
+                            </td>
+                            <td class="padding-val">
+                                10px
+                            </td>
+                            <td class="input-cel">
+                                <input type="range" id="padding" name="padding" min="0" max="40" value="10" step="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Border
+                            </td>
+                            <td class="border-val">
+                                4px
+                            </td>
+                            <td class="input-cel">
+                                <input type="range" id="border" name="border" min="0" max="10" value="4" step="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Margin
+                            </td>
+                            <td class="margin-val">
+                                10px
+                            </td>
+                            <td class="input-cel">
+                                <input type="range" id="margin" name="margin" min="0" max="40" value="10" step="1">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script src="assets/js/widget.js"></script>
+</body>
+
+</html>
