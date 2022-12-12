@@ -3,92 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>The box-model widget</title>
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/img/ci_favicon.ico">
+    <title>Flex-shrink demo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/ci_favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            
-            <div class="col-12 mt-5">
-                <h4>Adjust the values below to see how they affect the buttons and their code</h4>
-                <div id="box-model-box" class="grey-box">
-                    <button>Button</button>
-                    <button>Button</button>
-                    <button id="third-button">Button</button>
-                </div>
-            </div>
-            <div class="col-md-5 col-lg-4 mb-5">
-                <div id="code-box" class="grey-box">
-                    <pre>button {
-    <span id="font-code" class="code-line">font-size: <span class="content-val">20px</span>;</span>
-    <span id="padding-code" class="code-line">padding: <span class="padding-val">10px</span>;</span>
-    <span id="border-code" class="code-line">border-width: <span class="border-val">1px</span>;</span>
-    <span id="margin-code" class="code-line">margin: <span class="margin-val">5px</span>;</span>
-}</pre>
-                </div>
-            </div>
-            <div class="col-md-7 col-lg-8 mb-5">
-                <div id="box-model-controls">
+    <h1>Flex-shrink Demo</h1>
 
-                    <table>
-                        <tr>
-                            <td class="value-col">
-                                Content
-                            </td>
-                            <td class="content-val cell">
-                                20px
-                            </td>
-                            <td class="input-cel">
-                                <input type="range" id="content" name="content" min="15" max="30" value="23" step="1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Padding
-                            </td>
-                            <td class="padding-val">
-                                10px
-                            </td>
-                            <td class="input-cel">
-                                <input type="range" id="padding" name="padding" min="0" max="40" value="10" step="1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Border
-                            </td>
-                            <td class="border-val">
-                                4px
-                            </td>
-                            <td class="input-cel">
-                                <input type="range" id="border" name="border" min="0" max="10" value="4" step="1">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Margin
-                            </td>
-                            <td class="margin-val">
-                                10px
-                            </td>
-                            <td class="input-cel">
-                                <input type="range" id="margin" name="margin" min="0" max="40" value="10" step="1">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-
-
+    <h2>Parent width: <span id="parent-width">600</span>px</h2>
+    <div id="parent">
+        <div class="child" id="box-a">
+            <h2>Box A</h2>
+            <p>Flex-basis: 300px</p>
+            <p>Flex-shrink: <span id="flex-s-a">1</span></p>
+            <p>Shrunk by <span id="calc-shrink-a">0</span>px</p>
+            <h3>Actual width: <span id="actual-width-a">300</span>px</h3>
         </div>
-        <script src="assets/js/widget.js"></script>
+        <div class="child" id="box-b">
+            <h2>Box A</h2>
+            <p>Flex-basis: 300px</p>
+            <p>Flex-shrink: <span id="flex-s-b">1</span></p>
+            <p>Shrunk by <span id="calc-shrink-b">0</span>px</p>
+            <h3>Actual width: <span id="actual-width-b">300</span>px</h3>
+        </div>
+    </div>
+    <div class="inputs">
+        <div>
+            <label for="width">
+                Adjust the parent's width (min: 100, max: 600):
+            </label>
+            <input type="number" name="width" id="width" min="100" max="600" step="50">
+        </div>
+        <div>
+            <label for="flex-shrink-one">Flex-shrink value of box A: </label>
+            <input type="number" name="flex-shrink-a" id="flex-shrink-a" min="0">
+        </div>
+        <div>
+            <label for="flex-shrink-two">Flex-shrink value of box B</label>
+            <input type="number" name="flex-shrink-b" id="flex-shrink-b" min="0">
+        </div>
+    </div>
 </body>
 
 </html>
