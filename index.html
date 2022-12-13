@@ -12,8 +12,27 @@
 
 <body>
     <h1>Flex-shrink Demo</h1>
-
-    <h2>Parent width: <span id="parent-width">600</span>px</h2>
+    <section>
+        <h2>Inputs</h2>
+        <p>Adjust the parent box's width and the flex-shrink values of box A and box B here:</p>
+        <div class="inputs">
+            <div>
+                <label for="width">
+                    Adjust the parent's width (min: 100, max: 600):
+                </label>
+                <input type="number" name="width" id="width" min="100" max="600" value="600" step="50">
+            </div>
+            <div>
+                <label for="flex-shrink-one">Flex-shrink value of box A: </label>
+                <input type="number" name="flex-shrink-a" id="flex-shrink-a" min="0" value="1">
+            </div>
+            <div>
+                <label for="flex-shrink-two">Flex-shrink value of box B</label>
+                <input type="number" name="flex-shrink-b" id="flex-shrink-b" min="0" value="1">
+            </div>
+        </div>
+    </section>
+    <h2>Parent width: <span id="parent-width">600</span>px / Deficit: <span id="deficit">0</span>px</h2>
     <div id="parent">
         <div class="child" id="box-a">
             <h2>Box A</h2>
@@ -30,22 +49,7 @@
             <h3>Actual width: <span id="actual-width-b">300</span>px</h3>
         </div>
     </div>
-    <div class="inputs">
-        <div>
-            <label for="width">
-                Adjust the parent's width (min: 100, max: 600):
-            </label>
-            <input type="number" name="width" id="width" min="100" max="600" value="600" step="50">
-        </div>
-        <div>
-            <label for="flex-shrink-one">Flex-shrink value of box A: </label>
-            <input type="number" name="flex-shrink-a" id="flex-shrink-a" min="0" value="1">
-        </div>
-        <div>
-            <label for="flex-shrink-two">Flex-shrink value of box B</label>
-            <input type="number" name="flex-shrink-b" id="flex-shrink-b" min="0" value="1">
-        </div>
-    </div>
+    
     <script src="assets/js/script.js"></script>
 </body>
 
