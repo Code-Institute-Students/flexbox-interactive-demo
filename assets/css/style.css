@@ -32,12 +32,12 @@ h4 {
     width: 600px;
     border: 5px solid var(--navy);
     box-sizing: content-box;
+    height: 200px;
 }
 
 .child {
     flex-basis: 300px;
     text-align: center;
-    padding: 7px;
 }
 
 #box-a {
