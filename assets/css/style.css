@@ -23,10 +23,6 @@ h1 {
     color: var(--orange);
 }
 
-h4 {
-    text-align: center;
-}
-
 #parent {
     display: flex;
     width: 600px;
