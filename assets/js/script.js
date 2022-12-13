@@ -49,11 +49,11 @@ function calculate(event) {
   shrinkAValue.innerText = shrinkA
   shrinkBValue.innerText = shrinkB
 
-  shrinkACalc.innerText = aShrunkBy.toFixed(2)
-  shrinkBCalc.innerText = bShrunkBy.toFixed(2)
+  shrinkACalc.innerText = aShrunkBy.toFixed()
+  shrinkBCalc.innerText = bShrunkBy.toFixed()
   
-  widthA.innerText = (300 - aShrunkBy).toFixed(2)
-  widthB.innerText = (300 - bShrunkBy).toFixed(2)
+  widthA.innerText = (300 - aShrunkBy).toFixed()
+  widthB.innerText = (300 - bShrunkBy).toFixed()
   
 
   // set styles
