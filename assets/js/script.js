@@ -15,6 +15,7 @@ shrinkBInput.addEventListener("change", calculate);
 
 /** Number displays */
 const parentWidth = document.getElementById("parent-width")
+const deficitDisplay = document.getElementById("deficit")
 
 const shrinkAValue = document.getElementById("flex-s-a");
 const shrinkACalc = document.getElementById("calc-shrink-a");
@@ -55,7 +56,7 @@ function calculate(event) {
   widthA.innerText = (300 - aShrunkBy).toFixed()
   widthB.innerText = (300 - bShrunkBy).toFixed()
   
-
+  deficitDisplay.innerText = parentDeficit
   // set styles
   parentBox.style.width = newParentWidth + "px";
   boxA.style.flexShrink = shrinkA
