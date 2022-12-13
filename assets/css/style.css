@@ -1,25 +1,61 @@
+/* CI BRANDING */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --orange: #e84610;
+    --pink: #ff5a60;
+    --blue: #009fe3;
+    --teal: #23bbbb;
+    --dark-grey: #2c2c2f;
+    --navy: #445261;
+    --white: #fff;
+
+}
+
+/* FONTS */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grey);
+}
+
+h1 {
+    color: var(--orange);
+}
+
+h4 {
+    text-align: center;
+}
+
 #parent {
     display: flex;
     width: 600px;
-    border: 5px solid #e84610;
-
+    border: 5px solid var(--navy);
+    box-sizing: content-box;
 }
 
 .child {
     flex-basis: 300px;
-    box-sizing: border-box;
-    border: 2px solid #4a4a4f;
     text-align: center;
+    padding: 7px;
 }
 
 #box-a {
-    background-color: #23bbbb;
+    background-color: var(--pink);
 }
 
 #box-b {
-    background-color: #efb920;
+    background-color: var(--teal);
 }
 
-.inputs div {
-    margin: 5px;
+.container {
+    width: 630px;
+}
+
+.results {
+    font-weight: bold;
+}
+
+.orange {
+    color: var(--orange);
 }
