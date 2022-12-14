@@ -21,23 +21,23 @@
                 <section>
                     <p>Adjust the parent box's width and the flex-shrink values of boxes A and B</p>
                     <div class="inputs">
-                        <div class="row mb-3">
-                            <label for="width" class="col-form-label col-6">Parent width (min: 300, max:
+                        <div class="row mb-1">
+                            <label for="width" class="col-form-label col-7">Parent width in px (min: 300, max:
                                 600)</label>
                             <div class="col-2">
                                 <input class="form-control" type="number" name="width" id="width" min="300" max="600"
                                     value="600" step="50">
                             </div>
                         </div>
-                        <div class="row mb-3">
-                            <label for="flex-shrink-one" class="col-form-label col-6">Flex-shrink value of box A</label>
+                        <div class="row mb-1">
+                            <label for="flex-shrink-one" class="col-form-label col-7">Flex-shrink value of box A</label>
                             <div class="col-2">
                                 <input class="form-control" type="number" name="flex-shrink-a" id="flex-shrink-a"
                                     min="0" value="1" max="10">
                             </div>
                         </div>
-                        <div class="row mb-3">
-                            <label for="flex-shrink-two" class="col-form-label col-6">Flex-shrink value of box B</label>
+                        <div class="row mb-1">
+                            <label for="flex-shrink-two" class="col-form-label col-7">Flex-shrink value of box B</label>
                             <div class="col-2">
                                 <input class="form-control" type="number" name="flex-shrink-b" id="flex-shrink-b"
                                     min="0" value="1" max="10">
@@ -46,7 +46,7 @@
                     </div>
                 </section>
                 <div class="row g-0">
-                    <section class="col-12 p-0 pt-3 results">
+                    <section class="col-12 p-0 pt-2 results">
                         <h4>Parent width: <span class="orange"><span id="parent-width">600</span>px</span> | Deficit:
                             <span class="orange"><span id="deficit">0</span>px</span></h4>
                         <div id="parent" class="p-0 m-0">
@@ -58,14 +58,14 @@
                             </div>
                         </div>
                     </section>
-                    <section class="col-6 p-0 pt-3 stats-a">
+                    <section class="col-6 p-0 pt-2 stats-a stats">
                         <h3>Box A</h3>
                         <p>Flex-basis: 300px</p>
                         <p>Flex-shrink: <span id="flex-s-a">1</span></p>
                         <p>Shrunk by <span id="calc-shrink-a">0</span>px</p>
                         <h4>Actual width: <span id="actual-width-a">300</span>px</h4>
                     </section>
-                    <section class="col-6 p-0 pt-3 stats-b">
+                    <section class="col-6 p-0 pt-2 stats-b stats">
                         <h3>Box B</h3>
                         <p>Flex-basis: 300px</p>
                         <p>Flex-shrink: <span id="flex-s-b">1</span></p>

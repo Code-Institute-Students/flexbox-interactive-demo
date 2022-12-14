@@ -55,3 +55,7 @@ h1 {
 .orange {
     color: var(--orange);
 }
+
+.stats > * {
+    margin: 3px 0;
+}
