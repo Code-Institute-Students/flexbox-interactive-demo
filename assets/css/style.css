@@ -9,6 +9,7 @@
     --dark-grey: #2c2c2f;
     --navy: #445261;
     --white: #fff;
+    --light-grey: #e6ecf0;
 
 }
 
@@ -58,4 +59,8 @@ h1 {
 
 .stats > * {
     margin: 3px 0;
+}
+
+#wrapper {
+    background-color: var(--light-grey);
 }
